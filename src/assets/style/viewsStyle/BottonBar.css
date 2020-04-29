@@ -1,0 +1,30 @@
+.BottomBar{
+    position: fixed;
+    height: 0.49rem;
+    width: 100%;
+    background-color: skyblue;
+    bottom: 0;
+}
+.list{
+    width: 25%;
+    height: 0.49rem;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    background-color: #FFFFFF;
+}
+.list-top{
+    font-size: 0;
+    width: 0.25rem;
+    height: 0.25rem;
+    margin: 0.04rem auto;
+    overflow: hidden;
+}
+.list-top-img{
+    width: 100%;
+    overflow: hidden;
+}
+.list-bottom{
+    font-size: 0.11rem;
+    color: #999999;
+}
