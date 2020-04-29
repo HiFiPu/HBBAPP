@@ -1,7 +1,9 @@
 .App {
   text-align: center;
 }
-
+nav a{
+  margin:5px;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -26,6 +28,9 @@
 
 .App-link {
   color: #61dafb;
+}
+.App-active{
+  color:red;
 }
 
 @keyframes App-logo-spin {

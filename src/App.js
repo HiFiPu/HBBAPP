@@ -1,26 +1,40 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import BottomBar from "./components/common/BottomBar";
+import {
+  connect
+} from 'react-redux'
+import {bindActionCreators} from "redux";
+import MyRouter from "./components/common/MyRouter";
+import router from './router/index'
+import LearnBakeDataCreator,{changeLearnBakeList} from './store/actionCreator/LearnBake'
+class App extends React.Component {
+  constructor(props) {
+    console.log(props)
+    super(props);
+    this.NavList = null
+  }
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  render() {
+    return (
+        <div className="App">
+          <MyRouter router={router}></MyRouter>
+          <BottomBar></BottomBar>
+        </div>
+    )
+  }
+
+  componentDidMount() {
+    this.props.getLearnBake()
+  }
+
 }
 
-export default App;
+function mapStateTopProps(state) {
+  console.log(state)
+  return {
+    NavList: state.learnBakeData.NavList
+  }
+}
+
+
+export default connect(mapStateTopProps, dispatch => bindActionCreators(LearnBakeDataCreator, dispatch))(App);
