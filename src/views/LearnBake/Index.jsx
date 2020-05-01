@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import {Button} from 'antd-mobile'
 export default class Index extends Component {
     constructor(props) {
         super(props);
@@ -7,7 +8,7 @@ export default class Index extends Component {
     render() {
         return (
             <div>
-                学烘培
+              <Button type="primary">This is a button</Button>
             </div>
         )
     }
