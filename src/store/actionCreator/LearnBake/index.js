@@ -14,8 +14,8 @@ export default {
                     _t: 1588084825168,
                     csrfToken:''
                 }})
-                console.log(data)
-                dispatch(changeLearnBakeList(data.category))
+                console.log('------------------------',{...data.category})
+                dispatch(changeLearnBakeList({...data.category}))
         }
     }
 }

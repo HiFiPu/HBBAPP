@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Button } from 'antd-mobile'
 import "../../assets/style/viewsStyle/xhp.css"
 import { Link } from "react-router-dom"
 import {
@@ -17,7 +16,6 @@ class Index extends Component {
     render() {
         return (
             <div>
-                {/* <Button type="primary">This is a button</Button> */}
                 {/* 头部  */}
                 <header>
                     <img className={'title'} src={require('../../assets/images/head1.png')} alt={''} />
@@ -31,26 +29,26 @@ class Index extends Component {
                 </header>
 
                 {/* 头部导航栏 */}
-                <nav>
-                    <Link >
+                <nav className={'nav-link'}>
+                    <Link to="/" >
                         <figure>
                             <img src={require('../../assets/images/nav1.png')} alt="" />
                         </figure>
                         <figcaption>技巧百科</figcaption>
                     </Link>
-                    <Link href="/">
+                    <Link to="/">
                         <figure>
                             <img src={require('../../assets/images/nav2.png')} alt="" />
                         </figure>
                         <figcaption>视频学堂</figcaption>
                     </Link>
-                    <Link href="/">
+                    <Link to="/">
                         <figure>
                             <img src={require('../../assets/images/nav3.png')} alt="" />
                         </figure>
                         <figcaption>新手教程</figcaption>
                     </Link>
-                    <Link href="/">
+                    <Link to="/">
                         <figure>
                             <img src={require('../../assets/images/nav4.png')} alt="" />
                         </figure>
