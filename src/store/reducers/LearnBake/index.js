@@ -5,5 +5,8 @@ export default function (state=learnBakeDataInit,{type,payload}) {
     if (type===learnBakeDataType.CHANGE_CATEGORY){
         state.category = payload
     }
+    if (type===learnBakeDataType.CHANGE_CONTENTS){
+        state.RecommendList = payload
+    }
     return state
 }

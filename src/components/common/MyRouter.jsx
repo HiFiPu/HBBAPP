@@ -13,12 +13,13 @@ export default class MyRouter extends Component {
     }
 
     render() {
+        console.log('MyRouter**********',this.props)
         return (
             <Switch>
                 {
                     this.props.router.map(v => (
-                        <Route key={v.path} exact={v.exact} path={v.path}
-                               render={() => <GuardRouter {...v}></GuardRouter>}></Route>
+                        <Route exact={v.exact} path={v.path}
+                               render={() => <GuardRouter  ackstore={this.props} key={v.path}  {...v}></GuardRouter>}></Route>
                     ))
                 }
                 <Redirect to={"/Error"} from="*"></Redirect>

@@ -1,5 +1,4 @@
 import React from 'react';
-import BottomBar from "./components/common/BottomBar";
 import {
   connect
 } from 'react-redux'
@@ -18,14 +17,15 @@ class App extends React.Component {
     console.log('render',this.props)
     return (
         <div className="App">
-          <MyRouter router={router}></MyRouter>
-          <BottomBar></BottomBar>
+          <MyRouter router={router} ack={this.props}></MyRouter>
         </div>
     )
   }
 
   componentDidMount() {
+    console.log('999999999999',this.props)
     this.props.getLearnBake()
+    this.props.getLearnBakeContents()
   }
 
 }

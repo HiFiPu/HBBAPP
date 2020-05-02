@@ -7,7 +7,8 @@ import My from '../views/My'
 import BakingCircle from "../views/BakingCircle/Index";
 import QuestionsAnswers from "../views/QuestionsAnswers/index";
 import Hut from "../views/Hut/Index";
-
+import university from '../views/LearnBake/VideoSchool/Index';
+import classify from '../views/LearnBake/classify'
 export default [
     {
         path: "/Login",
@@ -16,6 +17,14 @@ export default [
     {
         path: "/Error",
         component: Error
+    },
+    {
+        path: "/university",
+        component: university
+    },
+    {
+        path: "/classify",
+        component:classify
     },
     {
         path: "/",

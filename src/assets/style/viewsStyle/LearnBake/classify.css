@@ -1,0 +1,10 @@
+.am-tabs-default-bar {
+    position: relative;
+    display: flex;
+    flex-shrink: 0;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll !important;
+    z-index: 1;
+}

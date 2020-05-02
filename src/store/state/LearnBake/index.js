@@ -1,7 +1,7 @@
 export default {
     // NavList:[],
     // BannerList:[],
-    // RecommendList:[],
+    RecommendList:[],
     category:[]
 
 }

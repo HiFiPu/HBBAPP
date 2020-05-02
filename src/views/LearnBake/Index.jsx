@@ -36,7 +36,7 @@ class Index extends Component {
                         </figure>
                         <figcaption>技巧百科</figcaption>
                     </Link>
-                    <Link to="/">
+                    <Link to="/university">
                         <figure>
                             <img src={require('../../assets/images/nav2.png')} alt="" />
                         </figure>
@@ -48,7 +48,7 @@ class Index extends Component {
                         </figure>
                         <figcaption>新手教程</figcaption>
                     </Link>
-                    <Link to="/">
+                    <Link to="/classify">
                         <figure>
                             <img src={require('../../assets/images/nav4.png')} alt="" />
                         </figure>

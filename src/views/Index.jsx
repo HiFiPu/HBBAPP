@@ -4,7 +4,7 @@ import {
     NavLink
 } from "react-router-dom";
 import MyRouter from "../components/common/MyRouter";
-
+import '../assets/style/viewsStyle/BottonBar.css'
 export default class Index extends Component {
     constructor(props) {
         super(props);
