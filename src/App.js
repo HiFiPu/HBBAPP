@@ -25,7 +25,7 @@ class App extends React.Component {
   componentDidMount() {
     console.log('999999999999',this.props)
     this.props.getLearnBake()
-    this.props.getLearnBakeContents()
+    // this.props.getLearnBakeContents()
   }
 
 }

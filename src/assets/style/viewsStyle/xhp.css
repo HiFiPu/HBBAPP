@@ -3,13 +3,14 @@
 }
 html{
     font-size: 26.6666666666667vw;
-}
-body{
-    font-size: 16px;
     
 }
+body{
+    font-size: 16px; 
+    touch-action: none; 
+}
 header{
-    width: 100%;
+    width: 3.75rem;
     height:0.44rem;
     position:fixed;
     left:0px;
@@ -19,7 +20,8 @@ header{
     justify-content: space-between;
     align-items: center;
     padding:0 0.18rem;
-    background:#fff;
+    background-color:#fff;
+    z-index:999;
 }
 header>div{
     width:2.49rem;
@@ -51,7 +53,7 @@ header .title{
     margin:0.095rem 0;
 }
 nav{
-    width: 100%;
+    width: 3.75rem;
     height:0.86rem;
     display: flex !important;
     flex-direction: row;
@@ -59,6 +61,7 @@ nav{
     align-items: center;
     margin-top:0.44rem;
     padding:0 0.23rem ;
+    background-color:#fff;
 }
 nav figure img{
     width:0.45rem;
@@ -76,6 +79,9 @@ nav figcaption{
 .content{
     width: 3.75rem;
     /* background: #999; */
+    background-color:#fff;
+    padding:0 0 0.2rem 0;
+
 }
 .content .top {
     display: flex;
@@ -102,6 +108,7 @@ nav figcaption{
 }
 .content ul li{
     margin-right:0.1rem;
+    margin-bottom:0.1rem;
 }
 .content ul li img{
     width: 1.6rem;
@@ -122,11 +129,10 @@ nav figcaption{
 
 }
 footer{
-    width: 100%;
+    width: 3.75rem;
     height:0.69rem;
     padding:0.1rem 0.2rem;
     background:#F5F7F9;
-    margin-top:0.25rem;
     margin-bottom:0.49rem;
     border-bottom:1px solid #eee;
 }
@@ -141,7 +147,7 @@ footer p{
     text-align: left;
     font-size:13px;
     line-height:0.25rem;
-    color:#939393;
-    
+    color:#939393;  
 }
+
 
