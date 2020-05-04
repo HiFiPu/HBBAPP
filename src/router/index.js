@@ -9,7 +9,7 @@ import QuestionsAnswers from "../views/QuestionsAnswers/index";
 import Hut from "../views/Hut/Index";
 import university from '../views/LearnBake/VideoSchool/Index';
 import classify from '../views/LearnBake/classify';
-import skills from '../views/LearnBake/Skills/index';
+import tips from '../views/LearnBake/Skills/index';
 import Novice from '../views/LearnBake/NoviceTutorial/index';
 export default [
     {

@@ -54,7 +54,7 @@ import LearnBakeDataCreator,{changeLearnBakeList} from '../../store/actionCreato
                          </figure>
                          <figcaption>新手教程</figcaption>
                      </Link>
-                     <Link to="/">
+                     <Link to="/classify">
                          <figure>
                              <img src={require('../../assets/images/nav4.png')} alt=""/>
                          </figure>
