@@ -36,7 +36,7 @@ import LearnBakeDataCreator,{changeLearnBakeList} from '../../store/actionCreato
 
                 {/* 头部导航栏 */}
                 <nav>
-                     <Link to="/">
+                     <Link to="/skills">
                          <figure>
                              <img src={require('../../assets/images/nav1.png')} alt=""/>
                          </figure>
@@ -48,7 +48,7 @@ import LearnBakeDataCreator,{changeLearnBakeList} from '../../store/actionCreato
                          </figure>
                          <figcaption>视频学堂</figcaption>
                      </Link>
-                     <Link to="/">
+                     <Link to="/Novice">
                          <figure>
                              <img src={require('../../assets/images/nav3.png')} alt=""/>
                          </figure>

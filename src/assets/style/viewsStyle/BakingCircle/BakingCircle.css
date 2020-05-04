@@ -1,0 +1,213 @@
+html{
+    /*font-size: 100px;*/
+    font-size: 26.66666666666667vw;
+}
+body{
+    font-size: 16px;
+    background-color: #F5F7F9;
+}
+header{
+    width: 100%;
+    max-width: 6rem;
+    height: 0.44rem;
+    background: #fff;
+    position: fixed;
+    top:0;
+    display: flex; 
+    padding: 0 0.18rem;
+}
+header a img{
+    width: 0.27rem;
+    height: 0.27rem;
+}
+header div{
+    width: 2.85rem;
+    height: 0.44rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+}
+header div li{
+    width: 0.65rem;
+    line-height: 0.42rem;
+    text-align: center;
+}
+header div li span{
+    font-size: 0.16rem;
+    height: 0.21rem;
+    color: #999999;
+}
+header div li.active{
+    border-bottom: 2px solid #F2BDAE;
+}
+header div li.active span{
+    color: #4A4945;
+    font-weight: bold;
+}
+.main-c{
+    margin: 0.44rem 0 0.49rem 0;
+}
+.main-c .rotation{
+    width: 100%;
+    display: flex;
+    height: 1.01rem;
+    padding: 0.05rem 0.18rem 0.1rem;
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+}
+.main-c .rotation li a img{
+    margin-right:0.1rem;
+    width: 1.5rem;
+    height: 0.855rem;
+    border-radius: 0.06rem;
+}
+.main-c .tag{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    height: 0.55rem;
+    padding-left: 0.18rem;
+    background-color: #fff;
+    margin-bottom: 0;
+}
+.main-c .tag li a{
+    background-color: #94BFBB;
+    margin-right: 0.08rem;
+    border-radius: 0.04rem;
+    padding: 0.07rem 0.1rem;
+    display: inline-block;
+}
+.main-c .tag li a span{
+    color: #FFFFFF;
+    font-size: 0.15rem;
+    line-height: 0.21rem;
+    text-align: center;
+}
+.main-c .main li{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-bottom: 0.08rem;
+    padding: 0 0.18rem;
+}
+.main-c .main li .title{
+    display: flex;
+    justify-content: flex-start;
+    width: 3.45rem;
+    height: 0.44rem;
+    margin-top: 0.1rem;
+}
+.main-c .main li .title>img{
+    width: 0.38rem;
+    height: 0.38rem;
+    border-radius: 50%;
+    border:1px solid #ccc;
+}
+.main-c .main li .title>div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-left: 0.1rem;
+}
+.main-c .main li .title>div i{
+    font-size: 0.13rem;
+    height: 0.2rem;
+    line-height: 0.2rem;
+    color: #4A4945;
+}
+.main-c .main li .title>div p span{
+    font-size: 0.12rem;
+    height: 0.2rem;
+    line-height: 0.2rem;
+    color: #999999;
+    margin-right: 0.1rem;
+}
+.main-c .main li .text{
+    display: flex;
+    margin: 0.1rem 0 0.11rem;
+}
+.main-c .main li .text span{
+    font-size: 0.14rem;
+    line-height: 0.2rem;
+    display: inline-block;
+    color: #498DD0;
+}
+.main-c .main li .text p{
+    font-size: 0.14rem;
+    color: #4A4945;
+    line-height: 0.20rem;
+}
+.main-c .main li .pic{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.main-c .main li .pic img{
+    width: 32%;
+    margin-bottom: 0.1rem;
+}
+.main-c .main li .copy a{
+    display: flex;
+    justify-content: start;
+    /* height: 0.7rem; */
+    margin-bottom: 0.1rem;
+    border-radius: 0.04rem;
+    background-color: #F5F7F9;
+}
+.main-c .main li .copy a img{
+    width: 0.7rem;
+    height: 0.7rem;
+    border-radius: 0.04rem;
+}
+.main-c .main li .copy a dd{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-left: 0.15rem;
+}
+.main-c .main li .copy a dd h6{
+    font-size: 0.14rem;
+    color: #313131;
+    font-weight: bold;
+}
+.main-c .main li .copy a dd p{
+    font-size: 0.13rem;
+    color: #999;
+    margin-top: 0.05rem;
+}
+.main-c .main li .zan{
+    display: flex;
+    align-items: center;
+    width: 3.4rem;
+    height: 0.3rem;
+    padding-top: 0.05rem;
+    background-color: #fff;
+    margin: 0.04rem 0 0;
+    border-top:1px solid #ccc;
+}
+.main-c .main li .zan li{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 1.1498rem;
+    height: 0.2rem;
+    border-right:1px solid #ccc;
+}
+.main-c .main li .zan li img{
+    width: 0.19rem;
+    height: 0.19rem;
+}
+.main-c .main li .zan li span{
+    font-size: 0.12rem;
+    color: #999999;
+    height: 0.2rem;
+    line-height: 0.2rem;
+    margin-left: 0.05rem;
+}
+
