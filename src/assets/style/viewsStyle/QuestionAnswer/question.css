@@ -1,0 +1,193 @@
+*{
+    box-sizing:border-box;
+}
+html{
+    font-size: 26.6666666666667vw;
+}
+body{
+    font-size: 16px; 
+}
+header{
+    width: 100%;
+    height:0.44rem;
+    position:fixed;
+    left:0px;
+    top:0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding:0 0.18rem;
+    background:#fff;
+}
+header p{
+    color:#E98B71;
+    font-size: 16px;
+}
+header>div{
+    width:2.49rem;
+    height:0.35rem;
+    box-sizing:border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.04rem;
+    padding: 0 0.1rem;
+    background:#F5F7F9;
+    color:#4A4945;
+    font-size:0.14rem;
+}
+header .title{
+    width:0.27rem;
+    height:0.27rem;
+    margin:0.095rem 0;
+}
+.tabs{
+    width:3.75rem;
+    /* height:2rem; */
+    margin-top:0.39rem;
+    /* background-color: pink; */
+}
+
+.questionmain{
+    width: 3.75rem;
+    padding:0.15rem 0.16rem 0.5rem;
+    background-color: #fff;
+    text-align: left;
+}
+.questionTop{
+    width: 3.75rem;
+    height: 0.4rem;
+    display: flex !important;
+    flex-direction: row;
+    /* justify-content: space-between; */
+    align-items: center;
+}
+.questionTop img:nth-of-type(1){
+    width: 0.38rem;
+    height: 0.38rem;
+    display:block;
+    border-radius: 50%;
+}
+.questionTop span:nth-of-type(1){
+    font-size: 0.14rem;
+    color:#4A4945;
+}
+.questionTop img:nth-of-type(2){
+    width: 0.4rem;
+    height: 0.4rem;
+    margin:0 0.09rem 0 0.14rem;
+}
+
+.questioncontent p:nth-of-type(1){
+    font-size: 0.18rem;
+    font-weight: bold;
+    color: #4A4945;
+    line-height: 0.25rem; 
+    margin-top:0.1rem;
+}
+.questioncontent p:nth-of-type(2){
+    font-size: 14px;
+    color: #4A4945;
+    line-height: 0.2rem;
+    margin: 0.05rem 0 0.1rem 0;
+    max-height: 0.43rem;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+}
+.questioncontent .zan{
+    width: 3.33rem; 
+    height: 0.2rem;
+    display: block;
+    border-bottom: 1px solid #E7E2E5;
+    overflow: hidden;
+    font-size: 14px;
+    line-height: 0.2rem;
+    color: #999999;
+    box-sizing: border-box;
+    padding-bottom:0.35rem; 
+    margin-bottom:0.2rem;
+}
+.content-new .new-top{
+    font-size:0.18rem;
+    color:#4A4945;
+    font-weight: bold;
+    line-height: 25px;
+    max-height: 0.5rem;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    margin:0.1rem 0;
+    
+}
+.content-new .new-center{
+    display: flex !important;
+    flex-direction: row;
+    /* justify-content: space-between; */
+    align-items: center;
+    /* padding-bottom:0.1rem; */
+} 
+.content-new .new-center >img{
+    width: 0.7rem;
+    height: 0.7rem;
+}
+.content-new .new-center >div{
+    width:2.8rem;
+    height: 0.7rem;
+    background-color:#F5F7F9;
+    padding-left:0.15rem;
+}
+.content-new .new-center p{
+    font-size: 14px;
+    color: #313131;
+    font-weight: bold;
+    text-align: justify;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    margin:0.17rem 0 0.09rem;
+}
+.content-new .new-center span{
+    margin-top: 5px;
+    font-size: 0.13rem;
+    color: #999;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    word-break: break-all;
+}
+.content-new .new-bottom{
+    height: 0.5rem;
+    width: 3.43rem;
+    border-bottom: 1px solid #E7E2E5;
+    display: flex !important;
+    flex-direction: row;
+    /* justify-content: space-between; */
+    align-items: center;
+    justify-content: space-between;
+}
+.content-new .new-bottom>span{
+    color:#498DD0;
+    font-size:0.14rem;
+}
+.content-new .new-bottom>.bottom-right{
+   
+    display: flex !important;
+    flex-direction: row;
+    /* justify-content: space-between; */
+    align-items: center;
+    
+}
+.content-new .new-bottom>.bottom-right>img{
+    width: 0.19rem;
+    height: 0.19rem;
+}
+.content-new .new-bottom>.bottom-right>span{
+    color:#E98B71;
+    font-size:0.14rem;
+    margin-left:0.1rem;
+}
+.more{
+    margin-bottom:0.49rem;
+}
+

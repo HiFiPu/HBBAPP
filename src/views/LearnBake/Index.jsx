@@ -18,7 +18,7 @@ import LearnBakeDataCreator,{changeLearnBakeList} from '../../store/actionCreato
     render() {
         const {CategoryList,RecommendCourseList} = this.props;
         // console.log(33333,this.props.ack)
-        // console.log(132,CategoryList)
+        console.log(132,CategoryList)
         // console.log(132111,RecommendCourseList)
         return (
             <div>
