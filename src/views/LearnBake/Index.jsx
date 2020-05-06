@@ -18,9 +18,9 @@ import Recommend from '../../components/LearnBack/Recommend'
 
     render() {
         const {CategoryList,RecommendCourseList} = this.props;
-        console.log(this.props,'CCCCCCCCCCCCCCCCCCCCCCC')
+        // console.log(this.props,'CCCCCCCCCCCCCCCCCCCCCCC')
         // console.log(33333,this.props.ack)
-        console.log(132,CategoryList)
+        // console.log(132,CategoryList)
         // console.log(132111,RecommendCourseList)
         return (
             <div>

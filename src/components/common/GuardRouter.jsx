@@ -20,7 +20,7 @@ class GuardRouter extends Component {
                 this.props.history.push("/login");
             }
         }
-        console.log(this.props.path);
+        // console.log(this.props.path);
     }
 }
 export default withRouter(GuardRouter)

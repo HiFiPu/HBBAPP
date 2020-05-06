@@ -1,0 +1,56 @@
+.let-cont-war {
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+    zoom: 1;
+}
+.let-cont-war-titles{
+	margin: 0 auto;
+	    overflow: hidden;
+	    zoom: 1;
+}
+.let-cont-war-titles-v{
+	padding-top: 10px;
+	    padding-left: 16.875px;
+	    padding-bottom: 10px;
+	    font-size: 12px;
+	    font-weight: bold;
+	    line-height: 22px;
+	    color: #313131;
+	    overflow: hidden;
+	    zoom: 1;
+}
+.let-cont-war-titles-contents{
+	    padding: 0 15px;
+	    margin: 0 auto;
+	    overflow: hidden;
+	    zoom: 1;
+}
+.a-list{
+	    display: inline-block;
+	    padding: 0px 0px 10px 0px;
+	    text-align: center;
+	    width: 33.333%;
+	    box-sizing: border-box;
+	    overflow: hidden;
+	    zoom: 1;
+	
+}
+.a-list-d1{
+	font-size: 0;
+	    width: 80px !important;
+	    height: 80px !important;
+	    border-radius: 4px;
+	    overflow: hidden;
+	    margin: 0 auto;
+}
+.a-list-d1-img{
+	    width: 80px !important;
+	    overflow: hidden;
+	    height: 80px !important;
+}
+.a-list-d1-name{
+	font-size: 12px;
+	color: #313131;
+	    margin-top: 5px;
+}

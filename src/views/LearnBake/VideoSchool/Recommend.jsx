@@ -101,7 +101,7 @@ class Index extends Component {
       }
       componentDidMount() {
         // simulate img loading
-        console.log(this.arr,123456)
+        // console.log(this.arr,123456)
         this.props.getLearnBakeContents()
         document.querySelector('.kkkk').parentElement.parentElement.className='cc'
         document.querySelector('.ll').parentElement.className='wh'
@@ -113,7 +113,7 @@ class Index extends Component {
       }
 }
 function mapStateToProps(state){
-  console.log(state.learnBakeData.RecommendList,'777777777777777777777777')
+  // console.log(state.learnBakeData.RecommendList,'777777777777777777777777')
   return{RecommendList:state.learnBakeData.RecommendList}
 }
 function mapDispatchToProps(dispatch){

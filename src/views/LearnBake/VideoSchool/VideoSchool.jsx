@@ -16,7 +16,7 @@ export default class Index extends Component {
             categoryId
         }})
         this.CategoryList=data
-        console.log(this.CategoryList,'VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV')
+        // console.log(this.CategoryList,'VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV')
     }
     switchData(a,b){
         if(b.categoryId<2){

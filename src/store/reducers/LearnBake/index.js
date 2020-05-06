@@ -16,5 +16,11 @@ export default function (state=learnBakeDataInit,{type,payload}) {
     else if (type===learnBakeDataType.ADD_COURSE){
         state.RecommendCourseList = payload
     }
+    else if(type===learnBakeDataType.GET_CLASSIFY_RECOMMEND){
+        state.ClassifyRecommendData=payload
+    }
+    else if(type===learnBakeDataType.GET_CLASSIFY_OTHER)   {
+        state.ClassifyOtherData=payload
+    }
     return state
 }

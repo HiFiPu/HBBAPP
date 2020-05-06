@@ -10,7 +10,7 @@ export default class Index extends Component {
     render() {
         
         const { CategoryList } = this.props
-        console.log('PPPPPPPPPPPPPPPP', CategoryList)
+        // console.log('PPPPPPPPPPPPPPPP', CategoryList)
         return (
             <div className={'xx'}>
              {

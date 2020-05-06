@@ -7,7 +7,7 @@ export default class Index extends Component {
     render() {
         return (
             <div>
-                小屋
+                登录
             </div>
         )
     }

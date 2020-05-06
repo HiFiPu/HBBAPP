@@ -96,7 +96,7 @@ class Index extends Component {
 }
 
 function mapStateToProps(state){
-  console.log(state.learnBakeData.RecommendList,'777777777777777777777777')
+  // console.log(state.learnBakeData.RecommendList,'777777777777777777777777')
   return{RecommendList:state.learnBakeData.RecommendList}
 }
 function mapDispatchToProps(dispatch){

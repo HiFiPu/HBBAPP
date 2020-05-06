@@ -54,7 +54,7 @@ export default {
     // https://api.hongbeibang.com/question/getHot?&pageIndex=0&pageSize=10
     getQuestionsHot(pageIndex=0) {
         return async (dispatch) => {
-            console.log(222,this.props);
+            // console.log(222,this.props);
             const {data} = await axios.get('/question/getHot?', {params: {
                     pageIndex,
                     pageSize:this.props.pageSize,

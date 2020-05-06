@@ -8,3 +8,9 @@
     overflow-y: scroll !important;
     z-index: 1;
 }
+.userWidth{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    width: 100px !important;
+}

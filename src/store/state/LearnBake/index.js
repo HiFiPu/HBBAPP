@@ -4,6 +4,7 @@ export default {
     RecommendList:[],
     category:[],
     CategoryList:[],
-    RecommendCourseList:[]
-
+    RecommendCourseList:[],
+    ClassifyRecommendData:[],
+    ClassifyOtherData:[]
 }
