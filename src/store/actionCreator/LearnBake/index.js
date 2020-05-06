@@ -41,17 +41,17 @@ export default {
                 dispatch(changeLearnBakeList(data))
         }
     },
-    //  getLearnBakeContents() {
-    //     return async (dispatch) => {
-    //         console.log(222,this.props);
-    //         const {data} = await axios.get('/education/getIndexByWeb', {params: {
-    //                 _t: 1588084825168,
-    //                 csrfToken:''
-    //             }})
-    //             console.log('ffffffffff',data.category)
-    //             dispatch(changeLearnBakeContents(data.category))
-    //     }
-    // },
+     getLearnBakeContents() {
+        return async (dispatch) => {
+            console.log(222,this.props);
+            const {data} = await axios.get('/education/getIndexByWeb', {params: {
+                    _t: 1588084825168,
+                    csrfToken:''
+                }})
+                console.log('ffffffffff',data.category)
+                dispatch(changeLearnBakeContents(data.category))
+        }
+    },
     // 元气早餐
     getLearnBakeCategory() {
         return async (dispatch) => {

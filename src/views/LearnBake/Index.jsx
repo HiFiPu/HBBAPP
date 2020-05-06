@@ -10,6 +10,7 @@ import {
 import Category from "../../components//LearnBack/Category";
 import RecommendCourse from "../../components/LearnBack/RecommendCourse"
 import LearnBakeDataCreator,{changeLearnBakeList} from '../../store/actionCreator/LearnBake'
+import Recommend from '../../components/LearnBack/Recommend'
  class Index extends Component {
     constructor(props) {
         super(props);
@@ -17,6 +18,7 @@ import LearnBakeDataCreator,{changeLearnBakeList} from '../../store/actionCreato
 
     render() {
         const {CategoryList,RecommendCourseList} = this.props;
+        console.log(this.props,'CCCCCCCCCCCCCCCCCCCCCCC')
         // console.log(33333,this.props.ack)
         // console.log(132,CategoryList)
         // console.log(132111,RecommendCourseList)
@@ -78,17 +80,18 @@ import LearnBakeDataCreator,{changeLearnBakeList} from '../../store/actionCreato
                     {/* 元气早餐 */}
 
                     {
-                    CategoryList.map(v=>(
-                    <div key={v.categoryId}>
-                        <div className={"top"}>
-                            <h2>{v.title}</h2>
-                            <a href="">查看全部</a>
-                        </div>
-                            {
-                            <Category {...v} ></Category> 
-                           }
-                    </div>
-                    ))
+                        <Recommend CategoryList={CategoryList}></Recommend>
+                    // CategoryList.map(v=>(
+                    // <div key={v.categoryId}>
+                    //     <div className={"top"}>
+                    //         <h2>{v.title}</h2>
+                    //         <a href="">查看全部</a>
+                    //     </div>
+                    //         {
+                    //         <Category {...v} ></Category> 
+                    //        }
+                    // </div>
+                    // ))
                     } 
                 </div>
 

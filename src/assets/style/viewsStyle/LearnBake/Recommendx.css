@@ -1,0 +1,76 @@
+.xx{
+	width: 100%;
+	/* display: flex;
+	flex-wrap: wrap; */
+}
+.cx-war {
+	float: left;
+	margin: 0 0 0 12px;
+	overflow: hidden;
+	position: relative;
+}
+
+.cx-war-listwar {
+	width: 162px;
+	height: 305px;
+	overflow: hidden;
+	display: inline-block;
+	vertical-align: top;
+	padding-bottom: 24px;
+	box-sizing: border-box;
+	margin-right: 11px;
+}
+
+.cx-war-listwar-c1 {
+	width: 100%;
+	margin: 0 !important;
+	display: inline-block;
+}
+
+.cx-war-listwar-c2 {
+	width: 162px !important;
+	height: 225px !important;
+	position: relative;
+	overflow: hidden;
+	font-size: 0;
+}
+
+.cx-war-listwar-c2-img {
+	width: 100%;
+	border-radius: 4px;
+}
+
+.cx-war-listwar-c2-img-lv{
+	position: absolute;
+	    left: 0px;
+	    bottom: 8.5px;
+	    z-index: 3;
+	    margin: 0 10px;
+	    padding: 2px 5px;
+	    box-sizing: border-box;
+	    max-width: 140px;
+	    border-radius: 4px;
+	    background-color: #fff;
+	    color: #4A4945;
+	    line-height: 15px;
+	    font-size: 11px;
+	    overflow: hidden;
+	    text-overflow: ellipsis;
+	    white-space: nowrap;
+}
+
+.cx-war-listwar-c2-img-title {
+	margin-top: 5px;
+	color: #4A4945;
+	font-weight: bold;
+	font-size: 15px;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	word-break: break-all;
+	text-overflow: ellipsis;
+	white-space: normal;
+	width: 162px;
+	height: 42.5px;
+}
