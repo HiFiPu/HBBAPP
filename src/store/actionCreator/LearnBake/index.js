@@ -67,6 +67,13 @@ export function addLesson(payload) {
         payload
     }
 }
+// 全部课程
+export function addAllLesson(payload) {
+    return{
+        type:learnBakeDataType.GET_ALLLESSON,
+        payload
+    }
+}
 // index/getByType?_t=1588084825537&csrfToken=&type=11
 export default {
     getLearnBake() {
@@ -155,6 +162,19 @@ export default {
                 }})
             //    console.log(999999888,data)
             dispatch(addLesson(data))
+        }
+    },
+    // https://api.hongbeibang.com/index/getIndexItem?&categoryId=10167
+    getAllLesson() {
+        return async (dispatch) => {
+            console.log(222888,this.props.location.state.categoryId);
+            const contentId=this.props.location.state.categoryId
+            const {data} = await axios.get('/index/getIndexItem', {params: {
+                // _t:1588794403067,
+                categoryId:contentId,
+                }})
+               console.log(999999888,data)
+            dispatch(addAllLesson(data))
         }
     },
 }

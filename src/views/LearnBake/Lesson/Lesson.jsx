@@ -29,7 +29,7 @@ class Lesson extends Component {
             <div>
                 {/* top */}
                 <div className={"lesson-video"}>
-                    <video controls="controls" autoplay={"autoplay"} poster={LessonList.image}>
+                    <video controls="controls" autoplay={"autoPlay"} poster={LessonList.image}>
                         <source src={LessonList.playURL2} />
                     </video>
                     <div className={"video-main"}>
@@ -101,7 +101,8 @@ class Lesson extends Component {
                 </div>
                 <div className={"moreCourse"}>
                     <h2>导师的其他课程</h2>
-                    <span>查看更多</span>
+                    <Link to={'/university'}><span>查看更多</span></Link>
+                   
                     {
                         <RecommendCourse RecommendCourseList={this.props.RecommendCourseList}></RecommendCourse>
                     }
@@ -137,7 +138,7 @@ class Lesson extends Component {
                 <div className={"foot"}>
                     <li>
                         <img src={require("../../../assets/images/geng.png")} />
-                        <span>更多课程</span>
+                        <Link to={'/university'}><span>更多课程</span></Link>
                     </li>
                     <li>
                         <img src={require("../../../assets/images/zi.png")} />

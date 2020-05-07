@@ -27,5 +27,9 @@ export default function (state=learnBakeDataInit,{type,payload}) {
         state.lessonList=payload
         state.IntroduceList=payload.introduces
     }
+    else if(type===learnBakeDataType.GET_ALLLESSON)   {
+        state.AllLessonList=payload
+        
+    }
     return state
 }

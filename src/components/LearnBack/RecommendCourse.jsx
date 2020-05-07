@@ -29,7 +29,7 @@ export default class RecommendCategory extends Component {
                         this.props.RecommendCourseList.map((item)=>(
                         <ul key={item.clientId}>
                             <li className={"goods"}  >
-                             <Link to={{pathname:'/lesson/categoryId='+(item.courseId),state:{categoryId:item.courseId}}}>
+                             <Link to={{pathname:'/lesson/contentId='+(item.courseId),state:{categoryId:item.courseId}}}>
                              <img src={item.coverImage} alt=""
                                 />
                              </Link> 

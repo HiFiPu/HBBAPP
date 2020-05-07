@@ -150,7 +150,7 @@ class Index extends Component {
         )
     }
     componentDidMount() {
-        // console.log(333334444,this.props)
+        console.log(333334444,this.props)
         this.props.getQuestionsEssence.call(this);
         this.props.getQuestionsNew.call(this);
         this.props.getQuestionsHot.call(this);

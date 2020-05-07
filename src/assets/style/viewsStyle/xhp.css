@@ -116,16 +116,19 @@ nav figcaption{
 }
 .content ul li div{
     width: 1.6rem;
-    height: 0.14rem;
+    height: 0.4rem;
     color:#4A4945;
     font-size:0.15rem;
     font-weight: bold;
     line-height: 0.2rem;
     text-align: left;
-    /* overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
     word-break: break-all;
     text-overflow: ellipsis;
-    white-space: normal; */
+    white-space: normal;
 
 }
 footer{

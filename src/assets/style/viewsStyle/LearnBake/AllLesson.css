@@ -1,0 +1,34 @@
+.lessonwrap{
+    width: 3.75rem;
+    padding:0.15rem 0.2rem 0.5rem;
+    text-align: left;
+
+}
+.lessonwrap ul:nth-last-of-type(odd){
+    float:left;
+}
+.lessonwrap ul:nth-last-of-type(even){
+    float:right;
+}
+.lessonwrap ul li img{
+    width:1.62rem;
+    height: 2.235rem;
+    /* margin-right: 0.1rem; */
+}
+.lessonwrap ul li p{
+    width: 1.61rem;
+    margin-top: 5px;
+    color: #4A4945;
+    font-weight: bold;
+    font-size: 0.15rem;
+    line-height: 0.25rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    word-break: break-all;
+    text-overflow: ellipsis;
+    white-space: normal;
+    margin-bottom:0.2rem;
+    
+}

@@ -13,7 +13,7 @@ export default class MyRouter extends Component {
     }
 
     render() {
-        // console.log('MyRouter**********',this.props)
+        console.log('MyRouter**********',this.props)
         return (
             <Switch>
                 {

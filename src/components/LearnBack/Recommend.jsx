@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import Category from './Category'
+import {Link} from "react-router-dom"
 export default class Index extends Component {
     constructor(props) {
         super(props);
@@ -7,7 +8,7 @@ export default class Index extends Component {
     }
     // length=this.props.length
     render() {
-        // console.log(this.props,'LLLLLLLLLLLLLLLLLLLLL')
+        console.log(this.props.CategoryList,'LLLLLLLLLLLLLLLLLLLLL')
         // this.props.length==8
         // console.lo
         // console.log('PPPPPPPPPPPPPPPP',this.props.length)
@@ -21,7 +22,7 @@ export default class Index extends Component {
                     <div key={v.categoryId}>
                         <div className={"top"}>
                             <h2>{v.title}</h2>
-                            <a href="">查看全部</a>
+                            <Link to={{pathname:'/alllesson/categoryId='+(v.categoryId),state:{categoryId:v.categoryId}}}>查看全部</Link>
                         </div>
                             {
                             <Category {...v} ></Category> 

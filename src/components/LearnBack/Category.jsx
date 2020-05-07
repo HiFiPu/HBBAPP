@@ -28,7 +28,7 @@ export default class Category extends Component {
                      <ul key={item.categoryId}>
                      { 
                          <li className={"goods"}>
-                             <Link to={{pathname:'/lesson/categoryId='+(item.categoryId),state:{categoryId:item.educationCourseId}}}>
+                             <Link to={{pathname:'/lesson/contentId='+(item.educationCourseId),state:{categoryId:item.educationCourseId}}}>
                              <img src={item.verticalImages} alt=""/>
                              </Link>
                              <div>{item.shareTitle}</div>

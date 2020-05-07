@@ -8,5 +8,6 @@ export default {
     ClassifyRecommendData:[],
     ClassifyOtherData:[],
     lessonList:[],
-    IntroduceList:[]
+    IntroduceList:[],
+    AllLessonList:[]
 }
