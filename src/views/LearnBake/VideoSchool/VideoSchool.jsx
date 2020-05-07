@@ -46,10 +46,10 @@ export default class Index extends Component {
                 categoryId:v.categoryId
             })
         })
-        console.log(tabs,'PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP')
+        // console.log(tabs,'PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP')
         return (
             <div>
-                <Tabs swipeable={false} onTabClick={this.switchData.bind(this,{a:1})} tabs={tabs} renderTabBar={props => <Tabs.DefaultTabBar {...props} page={5} />}>
+                <Tabs swipeable={false} onTabClick={this.switchData.bind(this,{a:1})} tabs={tabs} renderTabBar={props => <Tabs.DefaultTabBar {...props} page={5} tabBarUnderlineStyle={{border:'none',border:'1px #E98B71 solid'}}/>}>
                     {this.renderContent}
                 </Tabs>
                 {/* <h1>11</h1> */}

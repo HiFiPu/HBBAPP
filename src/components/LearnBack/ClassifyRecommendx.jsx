@@ -28,7 +28,7 @@ export default class Index extends Component {
                     list.map(v => (
                         <div className={'let-cont-war-titles'}>
                             <div className={'let-cont-war-titles-v'}>{v.name}
-                            <div style={{ width: '100%' }}>
+                            <div style={{ width: '100%' ,textAlign:'left'}}>
                             <div className={'let-cont-war'}>
                                 <div className={'.let-cont-war-titles-contents'}>
                                    {

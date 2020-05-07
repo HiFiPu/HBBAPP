@@ -47,7 +47,7 @@ class Index extends Component {
       })
     })
     const TabExample = () => (
-      <div style={{ height: 620, width: '100%' }} className={'lxf'}>
+      <div style={{ height: 620, width: '100%'}} className={'lxf'}>
         <Tabs tabs={tabs}
           initialPage={'t1'}
           tabBarPosition="left"
@@ -56,7 +56,7 @@ class Index extends Component {
           style={{ overflowY: 'auto' }}
           onTabClick={this.switchData.bind(this, { a: 1 })}
           // tabBarUnderlineStyle={{height:50}}
-          renderTabBar={props => <Tabs.DefaultTabBar {...props} page={10} />}
+          renderTabBar={props => <Tabs.DefaultTabBar {...props} page={10} tabBarUnderlineStyle={{border:'none',borderLeft:'1px #108ee9 solid',left:0}} />}
           className={'lxfvv'}
         >
           {/* <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '250px', backgroundColor: '#fff' }}>

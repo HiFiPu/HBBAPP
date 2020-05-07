@@ -22,7 +22,7 @@ export default class Index extends Component {
         return (
             
 
-            <div style={{ width: '100%' }}>
+            <div style={{ width: '100%'}}>
                 <div className={'let-cont-war'}>
                     <div className={'let-cont-war-titles'}>
         <div className={'let-cont-war-titles-v'}>{ClassifyObj.name}</div>
