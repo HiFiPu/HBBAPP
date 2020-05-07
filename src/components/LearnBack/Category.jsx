@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import '../../assets/style/viewsStyle/xhp.css'
 import { Carousel, WingBlank } from 'antd-mobile';
+import {Link}from 'react-router-dom'
 export default class Category extends Component {
     constructor(props) {
         super(props);
@@ -24,10 +25,12 @@ export default class Category extends Component {
                  //   afterChange={index => this.setState({ slideIndex: index })}
                  >
                    {this.props.item.map((item) => (
-                     <ul key={item.categoryItemId}>
+                     <ul key={item.categoryId}>
                      { 
                          <li className={"goods"}>
+                             <Link to={{pathname:'/lesson/categoryId='+(item.categoryId),state:{categoryId:item.educationCourseId}}}>
                              <img src={item.verticalImages} alt=""/>
+                             </Link>
                              <div>{item.shareTitle}</div>
                          </li> 
                          }

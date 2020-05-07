@@ -116,7 +116,7 @@ import Recommend from '../../components/LearnBack/Recommend'
     }
 }
     function mapStateToProps(state){
-        // console.log(121122,state)
+        console.log(121122,state)
         return {
             CategoryList:state.learnBakeData.CategoryList,
             RecommendCourseList:state.learnBakeData.RecommendCourseList

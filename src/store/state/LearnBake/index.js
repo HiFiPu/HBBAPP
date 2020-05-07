@@ -6,5 +6,7 @@ export default {
     CategoryList:[],
     RecommendCourseList:[],
     ClassifyRecommendData:[],
-    ClassifyOtherData:[]
+    ClassifyOtherData:[],
+    lessonList:[],
+    IntroduceList:[]
 }

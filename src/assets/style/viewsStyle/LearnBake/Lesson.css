@@ -1,0 +1,326 @@
+html{
+    /*font-size: 100px;*/
+    font-size: 26.66666666666667vw;
+}
+body{
+    background-color: #F5F7F9;
+    font-size: 16px;
+}
+.lesson-video{
+    width: 3.75rem;
+    background: #fff;
+}
+.lesson-video video{
+    width: 3.75rem;
+    height: 2.1rem;
+    background: #fff;
+}
+.video-main{
+    width: 3.75rem;
+    height: 1.25rem;
+    padding:0.12rem 0.2rem 0.15rem;
+    text-align: left;
+}
+.video-main p{
+    font-weight: bold;
+    font-size:0.2rem;
+    line-height: 0.28rem;
+    height: 0.56rem;
+    color: #313131;
+    /* white-space: nowrap; */
+    overflow: hidden;
+    /* text-overflow: ellipsis; */
+}
+.video-bottom{
+    display: flex;
+    flex-direction:row;
+    align-items:center;
+    position: relative;
+    margin-top: 0.15rem;
+}
+.video-bottom img:nth-of-type(1){
+    width: 0.27rem;
+    height: 0.27rem;
+}
+.video-bottom>div img:nth-of-type(1){
+    width: 0.19rem;
+    height: 0.19rem;
+    margin-right:0.01rem;
+}
+
+.video-bottom span{
+    font-size: 0.13rem;
+    line-height: 0.265rem;
+    color:#E98B71;
+}
+.video-bottom span:nth-of-type(2){
+    
+    color:#313131;
+}
+.video-bottom>div{
+    width: 0.825rem;
+    height: 0.29rem;
+    border:1px solid #E98B71;
+    border-radius: 0.04rem;
+    position: absolute;
+    right:0;
+    display: flex;
+    flex-direction:row;
+    align-items:center;
+
+}
+.perpetual{
+     width: 3.75rem;
+     margin-top:0.1rem;
+    padding:0 0.2rem 0.1rem;
+    background-color: #fff;
+}
+.perpetual>.perpetual-main{
+   
+    display: flex;
+    flex-direction:row;
+    align-items:center; 
+    /* justify-content: space-between; */
+    background-color: #fff;
+}
+.perpetual>.perpetual-main:nth-of-type(1){
+    padding:0.1rem 0;
+}
+.perpetual>.perpetual-main div:nth-of-type(odd){
+    width: 0.03rem;
+    height: 0.03rem;
+    border-radius: 50%;
+    background-color: #E98B71;
+}
+.perpetual>.perpetual-main div:nth-of-type(even){
+    color:#676767;
+    font-size: 0.13rem;
+    margin:0 0.15rem 0 0.06rem;
+}
+.homework{
+    width: 3.75rem;
+    height: 1.64rem;
+    padding: 0.15rem 0.175rem 0.2rem 0.2rem ;
+    background-color: #fff;
+    
+}
+.homework div{
+    display: flex;
+    flex-direction:row;
+    align-items:center;
+}
+.home-top{
+    margin:0.1rem 0 0.12rem;
+}
+.homework  h2 {
+    font-size: 0.17rem;
+    line-height: 0.24rem;
+    color: #313131;
+    vertical-align: middle;
+    display: inline-block;
+    font-weight: bold;
+}
+.homework span,.moreCourse span{
+    font-size: 0.15rem;
+    color: #999;
+    line-height: 0.15rem;
+    font-weight: normal;
+    position: absolute;
+    right: 0.2rem;
+}
+.homework img{
+    width: 0.82rem;
+    height: 0.82rem;
+    margin-left:0.03rem;
+}
+.home-bottom{
+    padding-bottom:0.2rem;
+    border-bottom:1px solid #eee;
+}
+.more{
+    text-align: left;
+    padding: 0.15rem 0.08rem 0rem 0.08rem ;
+    background-color: #fff;
+    margin-bottom: 0;
+}
+.more h2{
+    font-size: 0.17rem;
+    line-height: 0.24rem;
+    color: #313131;
+    vertical-align: middle;
+    display: inline-block;
+    font-weight: bold;
+    margin:0.06rem 0.18rem 0rem 0.17rem;
+    background-color: #fff;
+}
+.more .more-main p,.more .more-main span{
+    margin:0.14rem 0;
+    font-family: "Helvetica Neue", Helvetica, "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif;
+    /* line-height: 1.75em; */
+    color: #313131;
+    font-size:0.16rem !important;
+    /* margin-bottom:0 0 0.16rem 0.01rem; */
+}
+.more-main{
+    padding-bottom:0.2rem;
+    border-bottom:1px solid #eee;
+}
+
+.teacher{
+    text-align: left;
+    background-color: #fff;
+    padding-bottom: 0.2rem;
+    margin-bottom: 0.1rem;
+}
+.teacher h2,.moreCourse h2{
+    font-size: 0.17rem;
+    line-height: 0.24rem;
+    color: #313131;
+    vertical-align: middle;
+    display: inline-block;
+    font-weight: bold;
+    margin:0.15rem 0.18rem 0.1rem 0.17rem;  
+}
+.teacher p,.teacher span{
+    font-family: "Helvetica Neue", Helvetica, "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif !important;
+    /* line-height: 1.75em; */
+    color: #313131;
+    margin-bottom: 0.16rem;
+    font-size: 0.16rem !important;
+    /* line-height: 0.25rem; */
+    /* letter-spacing: 0.5px; */
+}
+.teacher-intro{
+    display: flex;
+    flex-direction:row;
+    align-items:center; 
+    margin-top:0.1rem;
+}
+.teacher-intro span{
+    font-size: 0.17rem;
+    color: #313131;
+    display: inline-block;
+    margin-left: 0.13rem;
+    margin-top:0.15rem;
+}
+.teacher-intro img{
+    width: 0.5rem;
+    height: 0.5rem;
+    margin-left:0.16rem;
+}
+.moreCourse{
+    text-align:left;
+    background-color: #fff;
+}
+.moreCourse span{
+    margin-top:0.18rem;
+}
+.moreCourse img{
+    width: 1.6rem;
+    height: 2.25rem;
+}
+.moreCourse .course-tro{
+    width: 1.6rem !important;
+    height: 0.4rem ;
+    color:#4A4945;
+    font-size:0.15rem;
+    font-weight: bold;
+    line-height: 0.2rem !important;
+    text-align: left;
+    overflow: hidden ;
+    /* word-break: break-all;
+    text-overflow: ellipsis;
+    white-space: normal;  */
+
+}
+.lesson-bottom{
+    background-color: #fff;
+    text-align: left;
+    padding: 0.15rem 0.175rem 1rem 0.2rem ;
+    margin-top: 0.1rem;
+
+}
+.lesson-bottom>img{
+    
+    width: 1.3rem;
+    height: 0.57rem;
+}
+.lesson-bottom>p{
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 22px;
+    color: #313131;
+    margin-bottom: 0.1rem;
+}
+.lesson-bottom>div{
+    display: flex;
+    flex-direction:row;
+    align-items:center; 
+    justify-content: space-between;
+}
+.lesson-bottom>div>div{
+    display: flex;
+    flex-direction:column;
+    align-items:center; 
+    justify-content: space-between;
+}
+.lesson-bottom>div img{
+    width: 0.5rem;
+    height: 0.58rem;
+}
+
+.lesson-bottom>div>div span{
+    font-size: 0.12rem;
+    color: #313131;
+}
+
+
+.foot{
+    width: 100%;
+    height: 0.5rem;
+    background: #fff;
+    position: fixed;
+    bottom:0;
+    display: flex;
+}
+.foot li{
+    width: 20%;
+    height: 0.5rem;
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+.foot img{
+    width: 0.2rem;
+    height: 0.195rem;
+    margin-bottom: 0.02rem;
+}
+.foot span{
+    font-size: 0.12rem;
+    color:#313131;
+ }
+.foot div{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    width: 60%;
+    background-color: #E98B71;
+    color: #fff;
+    font-size: 0.15rem;
+    font-weight: bold;
+}
+.foot div p{
+    text-decoration: line-through;
+    
+}
+.foot div p span{
+    color: #F3BEB0;
+    font-size: 0.15rem;
+    font-weight: bold;
+}
+.foot div span{
+    color: #fff;
+    font-size: 0.15rem;
+    font-weight: bold;
+}

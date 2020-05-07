@@ -160,7 +160,7 @@ class Index extends Component {
 }
 
 function mapStateToProps(state){
-    console.log(121122,state)
+    // console.log(121122,state)
     return {
         pageIndex:state.questionsAnswer.pageIndex,
         pageSize:state.questionsAnswer.pageSize,

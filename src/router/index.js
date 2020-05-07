@@ -11,6 +11,7 @@ import university from '../views/LearnBake/VideoSchool/Index';
 import classify from '../views/LearnBake/classify';
 import tips from '../views/LearnBake/Skills/index';
 import Novice from '../views/LearnBake/NoviceTutorial/index';
+import Lesson from '../views/LearnBake/Lesson/Lesson'
 export default [
     {
         path: "/Login",
@@ -35,6 +36,10 @@ export default [
     {
         path: "/classify",
         component:classify
+    },
+    {
+        path: "/lesson",
+        component:Lesson
     },
     {
         path: "/",

@@ -58,6 +58,15 @@ export function addLearnBakeCourse(payload) {
         payload
     }
 }
+
+
+// 首页链接课程
+export function addLesson(payload) {
+    return{
+        type:learnBakeDataType.GET_LESSON,
+        payload
+    }
+}
 // index/getByType?_t=1588084825537&csrfToken=&type=11
 export default {
     getLearnBake() {
@@ -132,6 +141,20 @@ export default {
                 }})
                 const RecommendCourse = data.data
                 dispatch(addLearnBakeCourse(RecommendCourse))
+        }
+    },
+    // 首页链接课程
+    // https://api.hongbeibang.com/education/getCourse?_t=1588794403067&educationCourseId=10589
+    getLesson() {
+        return async (dispatch) => {
+            console.log(222888,this.props.location.state.categoryId);
+            const educationCourseId=this.props.location.state.categoryId
+            const {data} = await axios.get('/education/getCourse', {params: {
+                // _t:1588794403067,
+                educationCourseId:educationCourseId,
+                }})
+            //    console.log(999999888,data)
+            dispatch(addLesson(data))
         }
     },
 }

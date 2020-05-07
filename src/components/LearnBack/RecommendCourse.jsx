@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import '../../assets/style/viewsStyle/xhp.css'
 import { Carousel, WingBlank } from 'antd-mobile';
+import {Link}from 'react-router-dom'
 export default class RecommendCategory extends Component {
     constructor(props) {
         super(props);
@@ -9,7 +10,7 @@ export default class RecommendCategory extends Component {
         };
     }
     render() {
-        // console.log(666,this.props)
+        // console.log(666,this.props.RecommendCourseList)
         return (
             
             <WingBlank>
@@ -28,9 +29,12 @@ export default class RecommendCategory extends Component {
                         this.props.RecommendCourseList.map((item)=>(
                         <ul key={item.clientId}>
                             <li className={"goods"}  >
-                                <img src={item.coverImage} alt=""
+                             <Link to={{pathname:'/lesson/categoryId='+(item.courseId),state:{categoryId:item.courseId}}}>
+                             <img src={item.coverImage} alt=""
                                 />
-                                <div>{item.coverTitle}</div>
+                             </Link> 
+                               
+                                <div className={"course-tro"}>{item.coverTitle}</div>
                             </li>
                         </ul>
                         ))
