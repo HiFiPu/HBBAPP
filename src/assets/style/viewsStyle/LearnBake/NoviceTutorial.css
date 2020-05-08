@@ -18,7 +18,7 @@ body{
     height: 2.1rem;
 }
 
-.intro .name{
+.intro  .name{
     background-color: #fff;
     box-sizing: border-box;
     width: 100%;
@@ -41,7 +41,7 @@ body{
     align-items: center;
     text-align: left;
 }
-.intro .name p img{
+.intro  .name p img{
     width: 0.27rem;
     height: 0.27rem;
 }
@@ -118,22 +118,95 @@ body{
     line-height: 0.21rem;
     color: #313131;
 }
-.intro .datails{
+.intro .include {
+    box-sizing: border-box;
     width: 100%;
-    min-height: 2.5rem;
+    background-color: #fff;
+    padding: 0.2rem 1.75rem 0.2rem 0.2rem;
+    border-bottom: 1px solid #ccc;
+}
+.intro .include .datails{
+    text-align: left;
+    width: 3.35rem;
+    min-height: 1.5rem;
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+}
+ h4{
+    width: 3.35rem;
+    font-weight: bold;
+    font-size: 0.17rem;
+    line-height: 0.24rem;
+    color: #313131;
+    margin-bottom: 0.1rem;
+    margin-top: 0.2rem;
+}
+.explain{
+    width: 3.35rem;
+    color: #313131;
+    margin-bottom: 0.1rem;
+    font-size: 0.16rem;
+    line-height: 0.255rem;
+    letter-spacing: 0.005rem;
+} 
+.intro .include .follow{
+    box-sizing: border-box;
+    text-align: left;
+    width: 3.35rem;
     background-color: #fff;
 }
+.include img{
+    width: 3.375rem;
+    height: 1.89rem;
+    margin-top: 0.1rem;
+}
+.include ul li{
+    list-style-type: disc;
+}
 
-
-
-
-
-
-
-
-
-
-
+.classroom{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 3.375rem;
+    height: 2.5619rem;
+    /* padding: 0.2rem 0.175rem 0.2rem 0.2rem; */
+}
+.classroom>img{
+    width: 1.3rem;
+    height: 0.5719rem;
+}
+.classroom p{
+    text-align: left;
+    width: 3.375rem;
+    font-weight: 300;
+    font-size: 0.14rem;
+    line-height: 0.22rem;
+    color: #313131;
+}
+.classroom div{
+    width: 3.375rem;
+    display: flex;
+    height: 0.74rem;
+    justify-content: space-between;
+    align-items: center;
+}
+.classroom div li{
+    height: 0.74rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.classroom div li img{
+    width: 0.5rem;
+    height: 0.58rem;
+}
+.classroom div li span{
+    font-size: 0.12rem;
+    color: #313131;
+}
 
 
 .foot{
@@ -147,6 +220,12 @@ body{
 .foot li{
     width: 20%;
     height: 0.5rem;
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+.foot li a{
     display: flex;
     flex-direction:column;
     justify-content:center;
