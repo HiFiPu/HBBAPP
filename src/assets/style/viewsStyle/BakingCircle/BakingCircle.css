@@ -6,47 +6,8 @@ body{
     font-size: 16px;
     background-color: #F5F7F9;
 }
-header{
-    width: 100%;
-    max-width: 6rem;
-    height: 0.44rem;
-    background: #fff;
-    position: fixed;
-    top:0;
-    display: flex; 
-    padding: 0 0.18rem;
-}
-header a img{
-    width: 0.27rem;
-    height: 0.27rem;
-}
-header div{
-    width: 2.85rem;
-    height: 0.44rem;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #fff;
-}
-header div li{
-    width: 0.65rem;
-    line-height: 0.42rem;
-    text-align: center;
-}
-header div li span{
-    font-size: 0.16rem;
-    height: 0.21rem;
-    color: #999999;
-}
-header div li.active{
-    border-bottom: 2px solid #F2BDAE;
-}
-header div li.active span{
-    color: #4A4945;
-    font-weight: bold;
-}
 .main-c{
-    margin: 0.44rem 0 0.49rem 0;
+    margin: 0 0 0.49rem 0;
 }
 .main-c .rotation{
     width: 100%;
@@ -79,13 +40,14 @@ header div li.active span{
     padding: 0.07rem 0.1rem;
     display: inline-block;
 }
-.main-c .tag li a span{
+.main-c div div.tag li a span{
     color: #FFFFFF;
     font-size: 0.15rem;
     line-height: 0.21rem;
     text-align: center;
 }
-.main-c .main li{
+
+.main-c div div .main .publish{
     background-color: #fff;
     display: flex;
     flex-direction: column;
@@ -93,94 +55,84 @@ header div li.active span{
     margin-bottom: 0.08rem;
     padding: 0 0.18rem;
 }
-.main-c .main li .title{
+.main-c div div .main .publish .title{
     display: flex;
     justify-content: flex-start;
     width: 3.45rem;
     height: 0.44rem;
     margin-top: 0.1rem;
 }
-.main-c .main li .title>img{
+.main-c div div .main .publish .title>img{
     width: 0.38rem;
     height: 0.38rem;
     border-radius: 50%;
     border:1px solid #ccc;
 }
-.main-c .main li .title>div{
+.main-c div div .main .publish .title>div{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-between;
     padding-left: 0.1rem;
 }
-.main-c .main li .title>div i{
+.main-c div div .main .publish .title>div i{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
     font-size: 0.13rem;
     height: 0.2rem;
     line-height: 0.2rem;
     color: #4A4945;
 }
-.main-c .main li .title>div p span{
+.main-c div div .main .publish .title>div i img{
+    width: 0.4rem;
+    height: 0.4rem;
+    margin-right: 0.05rem;
+}
+.main-c div div .main .publish .title>div p{
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.main-c div div .main .publish .title>div p span{
     font-size: 0.12rem;
     height: 0.2rem;
     line-height: 0.2rem;
     color: #999999;
     margin-right: 0.1rem;
 }
-.main-c .main li .text{
+.main-c div div .main .publish .text{
     display: flex;
     margin: 0.1rem 0 0.11rem;
+    text-align: left;
+    max-height: 0.8rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
-.main-c .main li .text span{
+.main-c div div .main .publish .text span{
     font-size: 0.14rem;
     line-height: 0.2rem;
     display: inline-block;
     color: #498DD0;
 }
-.main-c .main li .text p{
+.main-c div div .main .publish .text p{
     font-size: 0.14rem;
     color: #4A4945;
-    line-height: 0.20rem;
+    line-height: 0.2rem;
+    letter-spacing: 0.005rem;
 }
-.main-c .main li .pic{
+.main-c div div .main .publish .pic{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
-.main-c .main li .pic img{
+.main-c div div .main .publish .pic img{
     width: 32%;
-    margin-bottom: 0.1rem;
+    /* height: 32%; */
+    margin: 0.1rem 0.02rem;
 }
-.main-c .main li .copy a{
-    display: flex;
-    justify-content: start;
-    /* height: 0.7rem; */
-    margin-bottom: 0.1rem;
-    border-radius: 0.04rem;
-    background-color: #F5F7F9;
-}
-.main-c .main li .copy a img{
-    width: 0.7rem;
-    height: 0.7rem;
-    border-radius: 0.04rem;
-}
-.main-c .main li .copy a dd{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: flex-start;
-    margin-left: 0.15rem;
-}
-.main-c .main li .copy a dd h6{
-    font-size: 0.14rem;
-    color: #313131;
-    font-weight: bold;
-}
-.main-c .main li .copy a dd p{
-    font-size: 0.13rem;
-    color: #999;
-    margin-top: 0.05rem;
-}
-.main-c .main li .zan{
+.zan{
     display: flex;
     align-items: center;
     width: 3.4rem;
@@ -190,7 +142,7 @@ header div li.active span{
     margin: 0.04rem 0 0;
     border-top:1px solid #ccc;
 }
-.main-c .main li .zan li{
+.zan li{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -199,15 +151,126 @@ header div li.active span{
     height: 0.2rem;
     border-right:1px solid #ccc;
 }
-.main-c .main li .zan li img{
+.zan li:last-child{
+    border-right: none;
+}
+.zan li img{
     width: 0.19rem;
     height: 0.19rem;
 }
-.main-c .main li .zan li span{
+.zan li span{
     font-size: 0.12rem;
     color: #999999;
     height: 0.2rem;
     line-height: 0.2rem;
     margin-left: 0.05rem;
 }
+.spc{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* margin-bottom: 0.2rem; */
+    border-bottom: 0.1rem solid #F5F7F9;
+    
+}
+.spc .title{
+    display: flex;
+    justify-content: flex-start;
+    width: 3.45rem;
+    height: 0.44rem;
+    margin: 0.1rem 0.15rem;
+}
+.spc .title>img{
+    width: 0.38rem;
+    height: 0.38rem;
+    border-radius: 50%;
+    border:1px solid #ccc;
+}
+.spc .title>div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: 0.44rem;
+    padding-left: 0.1rem;
+}
+.spc .title>div i{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    font-size: 0.13rem;
+    height: 0.2rem;
+    line-height: 0.2rem;
+    color: #4A4945;
+}
+.spc .title>div i img{
+    width: 0.4rem;
+    height: 0.4rem;
+    margin-top: -0.1rem;
+    margin-right: 0.05rem;
+}
+.spc .title>div p span{
+    font-size: 0.12rem;
+    height: 0.2rem;
+    line-height: 0.2rem;
+    color: #999999;
+    margin-right: 0.1rem;
+}
 
+
+
+.show{
+    text-align: left;
+    margin: 0.10rem 0.15rem;
+}
+.show .product {
+    display: flex;
+    justify-content: flex-start;
+    /* align-items: center; */
+    flex-wrap: wrap;
+}
+.show .product img{
+    width: 32%;
+    margin: 0.1rem 0.02rem;
+}
+.show .copy{
+    background-color: #F5F7F9;
+}
+.show .copy h4{
+    font-size: 0.18rem;
+    font-weight: bold;
+    color: #4A4945;
+    line-height: 0.25rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.show .copy p{
+    font-size: 0.14rem;
+    color: #999999;
+    line-height: 0.20rem;
+    letter-spacing: 0.5px;
+}
+.show>p{
+    font-size: 0.14rem;
+    color: #4A4945;
+    line-height: 0.2rem;
+}
+.show p span{
+    color: #498DD0;
+    margin-right: 0.05rem;
+}
+.cen .zan{
+    margin: 0.10rem 0.15rem;
+}
+input {
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 0.15rem;
+    margin: 0.15rem;
+    padding: 0.08rem 0.15rem;
+    font-size: 0.12rem;
+    color: #999;
+}

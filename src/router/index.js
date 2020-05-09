@@ -9,8 +9,10 @@ import QuestionsAnswers from "../views/QuestionsAnswers/index";
 import Hut from "../views/Hut/Index";
 import university from '../views/LearnBake/VideoSchool/Index';
 import classify from '../views/LearnBake/classify';
-import tips from '../views/LearnBake/Skills/index';
+import skills from '../views/LearnBake/Skills/index';
 import Novice from '../views/LearnBake/NoviceTutorial/index';
+import details from '../views/LearnBake/Skills/SDetail/index';
+
 import Lesson from '../views/LearnBake/Lesson/Lesson';
 import allLesson from '../views/LearnBake/Lesson/AllLesson'
 import LearnBakeClassification from '../views/LearnBake/LearnBakeClassification'
@@ -26,7 +28,11 @@ export default [
     },
     {
         path: "/skills",
-        component: tips
+        component: skills
+    },
+    {
+        path: "/details",
+        component: details
     },
     {
         path: "/Novice",

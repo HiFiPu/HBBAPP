@@ -1,16 +1,25 @@
 import React, {Component} from 'react';
-import { Button, WhiteSpace, WingBlank } from 'antd-mobile';
-import "../../../assets/style/viewsStyle/LearnBake/Skills.css"
-export default class Index extends Component {
+import {Link} from "react-router-dom";
+import axios from "axios";
+import "../../../assets/style/viewsStyle/LearnBake/Skills.css";
+import {
+    connect
+} from "react-redux";
+import skillsActionCreator from "../../../store/actionCreator/LearnBake/Skills"
+
+
+class Skills extends Component {
     constructor(props) {
         super(props);
-        this.backClick = this.backClick.bind(this)
+        this.backClick = this.backClick.bind(this);
     }
     backClick(){
          this.props.history.go(-1)
     }
 
     render() {
+        const {courseGuide} = this.props;
+        // console.log(222999,courseGuide);
         return (
             <div>
                 <header>
@@ -21,31 +30,55 @@ export default class Index extends Component {
                 </header>
                 {/* <!-- 内容 --> */}
                 <section>
-                    <div>
-                        {/* <!-- 点击跳转至内容详情 --> */}
-                        <a href="javascript:;">
-                            <img src="https://image.hongbeibang.com/FoT62I81A_HDQBIoXPb2Q4XU2uQQ?690X350&imageView2/1/w/568/h/350" />
-                            <p>手揉面团的手法技巧</p>
-                        </a>
-                    </div>
-                    <div>
-                        {/* <!-- 点击跳转至内容详情 --> */}
-                        <a href="javascript:;">
-                            <img src="https://image.hongbeibang.com/FoT62I81A_HDQBIoXPb2Q4XU2uQQ?690X350&imageView2/1/w/568/h/350" />
-                            <p>手揉面团的手法技巧</p>
-                        </a>
-                    </div>
-                    {/* <!-- 以下同上 --> */}
-
+                    {
+                        courseGuide.map(v=>(
+                            <Link to={{pathname:'/details/contentId='+(v.courseId),state:{courseId:v.courseId
+                            }}}>
+                                <div key={v.contentId}>
+                                    <img src={v.image}/>
+                                    <p>{v.title}</p>
+                                </div>
+                            </Link>
+                        ))
+                    }
+                   
                 </section>
+
                 {/* <!-- 底部 --> */}
                 <div className={"feet"}>
                     <img src="https://image.hongbeibang.com/FqrNwXey8HDGxtROft8FVPUMPEwE"/>
                 </div>
             </div>
         )
-    }
+    } 
     componentDidMount() {
-        
+        this.props.getNewbieGuide.call(this);
+        // console.log(55555,this.props)
     }
 }
+function mapStateToProps(state){
+    // console.log(44444,state)
+    return {
+        type:state.Skills.type,
+        courseGuide:state.Skills.courseGuide
+    }
+}
+function mapDispatchToProps(dispatch){
+    return {
+        async getNewbieGuide(){
+            // console.log(99,this.props)
+            const {data} = await axios.get("/education/getNewbieGuide",{
+                params:{
+                    type:this.props.type,
+                }
+            });
+            // console.log(111,data);
+            dispatch(skillsActionCreator(data));
+            // dispatch({
+            //     type:"UP_SKILLS",
+            //     payload:data.courseGuide
+            // })
+        }
+    }
+}
+export default connect(mapStateToProps,mapDispatchToProps)(Skills);

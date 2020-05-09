@@ -3,7 +3,6 @@ html{
     font-size: 26.66666666666667vw;
 }
 body{
-    background-color: #ffffff;
     font-size: 16px;
 }
 header{
@@ -23,6 +22,8 @@ header a img{
 }
 
 section{
+    background-color: #fff;
+    min-height: 6rem;
     margin:0.44rem 0 1.46rem 0;
     padding: 0 0.18rem;
 }
@@ -31,18 +32,16 @@ section div{
     height: 1.12rem;
     padding: 0.15rem 0;
     border-bottom: 1px solid #f5f7f9;
-    
-}
-section div a{
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
-section div a img{
+section div img{
     width: 1.3rem;
     height: 0.8rem;
 }
-section div a p{
-    width: 2rem;
+section div p{
+    text-align: left;
+    line-height: 0.225rem;
     color: #313131;
     font-size: 0.16rem;
     margin: 0.05rem 0 0 0.15rem;

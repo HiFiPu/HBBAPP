@@ -1,0 +1,42 @@
+html{
+    /*font-size: 100px;*/
+    font-size: 26.66666666666667vw;
+}
+body{
+    font-size: 16px;
+}
+.information{
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+}
+.information video{
+    width: 3.75rem;
+    max-width: 6rem;
+    height: 2.1rem;
+    background: #fff;
+}
+.information .step h3{
+    box-sizing: border-box;
+    width: 3.75rem;
+    height: 0.5rem;
+    text-align: left;
+    font-size: 0.18rem;
+    font-weight: bold;
+    color: #313131;
+    line-height: 0.25rem;
+    padding: 0.15rem 0.15rem 0.1rem;
+}
+.information .step .present{
+    box-sizing: border-box;
+    padding: 0.15rem;
+    width: 3.75rem;
+}
+.information .step .present p{
+    text-align: left;
+    line-height: 0.22rem;
+}
+.information .step .present img{
+    width: 3.23rem;
+    height: 1.8128rem;
+}
