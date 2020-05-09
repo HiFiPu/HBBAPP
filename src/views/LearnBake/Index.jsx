@@ -66,7 +66,7 @@ import Recommend from '../../components/LearnBack/Recommend'
 
                 {/* 主体内容 */}
 
-                <div className={"content"}>
+                <div className={"content"} style={{overflowY:"auto"}}>
                     {/* 推荐课程 */}
                     <div>
                         <div className={"top"}>

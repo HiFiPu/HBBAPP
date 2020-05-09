@@ -173,7 +173,7 @@ export default {
                 // _t:1588794403067,
                 categoryId:contentId,
                 }})
-               console.log(999999888,data)
+            //    console.log(999999888,data)
             dispatch(addAllLesson(data))
         }
     },

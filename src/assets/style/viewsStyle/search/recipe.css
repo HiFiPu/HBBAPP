@@ -1,0 +1,412 @@
+.recipe-war {
+	padding: 0px;
+	max-width: 0.600px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.recipe-war-c {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+}
+
+.recipe-war-c-top {
+	background: #FFFFFF;
+	height: 44px;
+	z-index: 6;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	padding: 0 18px;
+	margin: 0 auto;
+	max-width: 600px;
+	box-sizing: border-box;
+}
+
+.recipe-war-c-top-span {
+	font-size: 0;
+	height: 44px;
+	float: left;
+	display: inline-block;
+	cursor: pointer;
+	text-align: center;
+	position: relative;
+	z-index: 1;
+}
+
+.recipe-war-c-top-span-img {
+	width: 27px;
+	height: 27px;
+	margin: 9.5px 0;
+}
+
+.recipe-war-c-top-rignt {
+	float: right;
+	margin: 7px 0;
+	position: relative;
+	z-index: 1;
+	height: 30px;
+}
+
+.recipe-war-c-top-style {
+	font-size: 14px;
+	width: 70px;
+	height: 30px;
+	color: #E98B71;
+	background-color: #fff;
+	border-radius: 30px;
+	cursor: pointer;
+	border: 1px solid;
+	border-color: #E98B71;
+	position: relative;
+	box-sizing: border-box;
+	margin: 0;
+	text-align: center;
+	line-height: 28px;
+}
+
+.recipe-content {
+	position: absolute;
+	left: 0;
+	right: 0;
+	max-width: 600px;
+	-webkit-overflow-scrolling: touch;
+	margin: 0 auto;
+	padding: 0;
+	overflow-y: scroll;
+	margin-top: 44px !important;
+}
+
+.recipe-content-c {
+	background-color: #FFFFFF;
+	margin: 0 auto;
+	padding: 0 0 10px 0;
+}
+
+.recipe-content-ci {
+	font-size: 0;
+	margin: 0 auto;
+	padding: 0;
+	overflow: hidden;
+	position: relative;
+	zoom: 1;
+}
+
+.recipe-content-ci-img {
+	background: none;
+	width: 375px;
+	height: 249.902px;
+	width: 100%;
+	overflow: hidden;
+}
+.recipe-content-ci-read{
+	padding: 0 15px;
+	    margin: 0;
+	    overflow: hidden;
+	    position: relative;
+	    zoom: 1;
+}
+.recipe-content-ci-read-ti{
+	color: #4A4945;
+	    line-height: 35px;
+	    font-size: 25px;
+	    font-weight: bold;
+	    word-wrap: break-word;
+	    position: relative;
+	    margin: 15px 0;
+}
+.recipe-content-ci-read-bott{
+	    overflow: hidden;
+	    zoom: 1;
+	    border-top: 1px solid #F1F1F1;
+	    margin: 15px auto;
+	    padding-top: 19px;
+}
+.recipe-content-ci-read-bott-l{
+	    border: 0px;
+	    background-color: #E98B71;
+	    color: #FFFFFF;
+	    float: right;
+	    width: 70px;
+	    height: 30px;
+	    margin: 5px 0;
+	    font-size: 14px;
+	    border-radius: 30px;
+	    display: flex;
+	    justify-content: center;
+	    align-items: center;
+		position: relative;
+		box-sizing: border-box;
+		text-align: center;
+		cursor: pointer;
+}
+.recipe-content-ci-read-bott-r{
+	    float: left;
+	    width: 35px !important;
+	    height: 35px !important;
+	    padding: 0;
+	    margin-right: 10px;
+}
+.recipe-content-ci-read-bott-r-i{
+	width: 100%;
+	    height: 100%;
+	    font-size: 0;
+	    position: relative;
+	    overflow: hidden;
+	    cursor: pointer;
+}
+.recipe-content-ci-read-bott-r-img{
+	    width: 33px;
+	    height: 33px;
+	    background: none;
+		border-radius: 50%;
+		    overflow: hidden;
+		    box-sizing: border-box;
+		    border: 1px solid;
+		    border-color: #E7E2E5;
+}
+.recipe-content-ci-read-bott-m{
+	overflow: hidden;
+	    height: 35px !important;
+	    display: flex;
+	    align-items: center;
+}
+.recipe-content-ci-read-bott-m-span{
+	    font-size: 13px;
+	    height: 40px;
+	    line-height: 40px;
+	    color: #4A4945;
+	    overflow: hidden;
+	    text-overflow: ellipsis;
+	    -otext-overflow: ellipsis;
+	    -webkit-text-overflow: ellipsis;
+	    -moz-text-overflow: ellipsis;
+	    white-space: nowrap;
+}
+.recipe-content-ci-read-cicle{
+	    word-wrap: break-word;
+	    letter-spacing: 1px;
+	    margin-top: 15px;
+	    margin-bottom: 30px;
+	    text-align: justify;
+}
+.recipe-content-ci-read-cicle-list{
+	margin: 0 auto;
+	    padding: 0;
+	    overflow: hidden;
+	    zoom: 1;
+}
+.recipe-content-ci-read-cicle-list-p{
+	color: #313131;
+	    line-height: 27px;
+	    font-weight: 200;
+	    font-size: 17px;
+		padding: 0;
+		    margin: 0;
+			word-break: break-all;
+			    word-wrap: break-word;
+}
+.recipe-center{
+	    position: relative;
+	    margin: 0 15px;
+	    padding: 0;
+}
+.recipe-center-title{
+	    background-color: #fff;
+	    padding-top: 15px;
+	    padding-horizontal: 15px;
+	    font-size: 16px;
+	    line-height: 22.5px;
+	    color: #313131;
+	    font-weight: bold;
+}
+.recipe-center-li1{
+	margin: 15px auto;
+	    padding: 0;
+	    display: flex;
+	    align-items: center;
+}
+.recipe-center-li1-r{
+	padding: 0;
+	    display: inline-flex;
+	    border: 1px solid;
+	    border-color: #ffffff;
+	    box-sizing: border-box;
+	    border-radius: 4px;
+	    font-size: 0;
+	    overflow: hidden;
+	    vertical-align: middle;
+	    align-items: center;
+}
+.recipe-center-li1-r1{
+	font-size: 0;
+	    height: 35px;
+	    width: 35px;
+	    border-radius: 4px;
+	    background-color: #F5F7F9;
+	    padding: 5px;
+	    display: inline-block;
+	    vertical-align: middle;
+	    box-sizing: border-box;
+	    position: relative;
+}
+.recipe-center-li1-r101{
+	width: 15px;
+	    height: 3px;
+	    left: 10px;
+	    top: 16px;
+		background-color: #999;
+		    border-radius: 1.5px;
+		    position: absolute;
+}
+.recipe-center-li1-r2{
+	width: 50px;
+	    height: 35px;
+	    border-radius: 4px;
+	    background-color: #F5F7F9;
+	    margin-left: 3px;
+	    margin-right: 3px;
+	    justify-content: center;
+	    align-items: center;
+	    display: inline-flex;
+}
+.recipe-center-li1-r202{
+	line-height: 28px;
+	    border: 0;
+	    border-radius: 0;
+	    text-align: center;
+	    display: inline-block;
+	    box-sizing: border-box;
+	    outline: none;
+	    vertical-align: middle;
+	    margin-left: 5px;
+	    margin-right: 5px;
+	    width: 35px;
+	    padding: 0 7.5px;
+	    height: 24px;
+	    font-size: 17px;
+	    font-weight: bold;
+	    color: #313131;
+	    background-color: #F5F7F9;
+	    border-style: none;
+	    border-bottom-style: solid;
+	    border-bottom-width: thin;
+	    border-bottom-color: #4a4640;
+}
+.recipe-center-li1-r202-1{
+	height: 15px;
+	    width: 3px;
+	    top: 10px;
+	    left: 16px;
+		    background-color: #999;
+		    border-radius: 1.5px;
+		    position: absolute;
+}
+.recipe-center-li1-r202-2{
+	width: 15px;
+	    height: 3px;
+	    left: 10px;
+	    top: 16px;
+		    background-color: #999;
+		    border-radius: 1.5px;
+		    position: absolute;
+		
+}
+.recipe-center-li1-span{
+	line-height: 15px;
+	    font-size: 13px;
+	    color: #999;
+	    position: relative;
+	    margin-left: 10px;
+}
+.recipe-center-o{
+	    margin: 0 auto;
+	    padding: 10px 0 15px 0 !important;
+	    overflow: hidden;
+	    zoom: 1;
+}
+.recipe-center-o-list{
+	border-top: 1px solid #F1F1F1;
+	flex-direction: row;
+	    padding: 10px 0;
+	    overflow: hidden;
+	    border-bottom: 1px solid #F1F1F1;
+	    display: flex;
+}
+.recipe-center-o-list-i{
+	    flex: 1;
+	    justify-content: center;
+	    margin-right: 15px;
+	    font-size: 17px;
+	    line-height: 27px;
+	    color: #313131;
+	    font-weight: 300;
+}
+.recipe-step{
+	position: relative;
+	    margin-top: 25px;
+}
+.recipe-step-c{
+	margin: 0 15px;
+	    padding: 0;
+	    overflow: hidden;
+	    zoom: 1
+}
+.recipe-step-c-tent{
+	font-size: 0;
+	    padding: 15px 0;
+	    border-bottom: 1px solid;
+	    border-bottom-color: #F1F1F1;
+	    box-sizing: border-box;
+	    overflow: hidden;
+	    zoom: 1;
+}
+.recipe-step-c-tent-t{
+	    position: relative;
+	    margin: 0 auto;
+	    padding: 0;
+	    font-size: 16px;
+	    color: #313131;
+	    font-weight: bold;
+	    line-height: 25px;
+	    overflow: hidden;
+	    zoom: 1;
+}
+.recipe-step-c-tent-img{
+	background: none;
+	    width: 345px;
+	    height: 230px;
+		margin: 15px auto 0 auto;
+		    border-radius: 4px;
+		    overflow: hidden;
+		
+}
+.recipe-step-c-tent-des{
+	overflow: hidden;
+	    word-wrap: break-word;
+	    letter-spacing: 1px;
+	    margin: 15px auto 0 auto;
+	    text-align: justify;
+}
+.recipe-step-c-tent-des-c{
+	    margin: 0 auto;
+	    padding: 0;
+	    overflow: hidden;
+	    zoom: 1;
+}
+.recipe-step-c-tent-des-c-p{
+	color: #313131;
+	    letter-spacing: -0.5px;
+	    font-weight: 200;
+	    font-size: 18px;
+	    line-height: 27px;
+		    padding: 0;
+		    margin: 0;
+			    word-break: break-all;
+			    word-wrap: break-word;
+}

@@ -13,6 +13,8 @@ import tips from '../views/LearnBake/Skills/index';
 import Novice from '../views/LearnBake/NoviceTutorial/index';
 import Lesson from '../views/LearnBake/Lesson/Lesson';
 import allLesson from '../views/LearnBake/Lesson/AllLesson'
+import LearnBakeClassification from '../views/LearnBake/LearnBakeClassification'
+import recipeDetails  from '../views/LearnBake/recipe' 
 export default [
     {
         path: "/Login",
@@ -35,16 +37,24 @@ export default [
         component: university
     },
     {
+        path:"/search/recipe/:contentId?/:classifyId",
+        component:LearnBakeClassification 
+    },
+    {
         path: "/classify",
         component:classify
     },
     {
         path: "/lesson",
-        component:Lesson
+        component:Lesson,
     },
     {
         path: "/alllesson",
         component:allLesson
+    },
+    {
+        path:"/recipe/:id",
+        component:recipeDetails
     },
     {
         path: "/",

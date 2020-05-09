@@ -17,7 +17,7 @@ class AllLesson extends Component {
         const {AllLessonList} = this.props
         // console.log(AllLessonList,111111111)
         return (
-            <div>
+            <div style={{overflowY:"auto"}}>
                <div className={"lessonwrap"}>
                    
                    {

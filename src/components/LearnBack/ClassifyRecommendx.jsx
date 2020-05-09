@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import '../../assets/style/viewsStyle/LearnBake/ClassifyRecommend.css'
+import { Link } from 'react-router-dom';
 export default class Index extends Component {
     constructor(props) {
         super(props);
@@ -8,7 +9,7 @@ export default class Index extends Component {
 
     render() {
         const { name, list } = this.props.ClassifyData
-        console.log(name, list, 'JJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJ')
+        console.log(this.props.ClassifyData, 'JJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJ')
 
         // let arr = []
         // let ClassifyObj={}
@@ -23,29 +24,31 @@ export default class Index extends Component {
         // }
         // console.log(arr,'OOOOOOOOOOOOOOOOOOOOOO')
         return (
-            <div style={{width:'100%'}}>
+            <div style={{ width: '100%' }}>
                 {
                     list.map(v => (
                         <div className={'let-cont-war-titles'}>
                             <div className={'let-cont-war-titles-v'}>{v.name}
-                            <div style={{ width: '100%' ,textAlign:'left'}}>
-                            <div className={'let-cont-war'}>
-                                <div className={'.let-cont-war-titles-contents'}>
-                                   {
-                                       v.list.map(k=>(
-                                        <a className={'a-list'}>
-                                        <div className={'a-list-d1'}>
-                                            <img className={'a-list-d1-img'} src={k.image}></img>
-                                        </div>
-                                        <div className={'a-list-d1-name'}>{k.name}</div>
-                                    </a>
-                                       ))
-                                   }
-                                   
+                                <div style={{ width: '100%', textAlign: 'left' }}>
+                                    <div className={'let-cont-war'}>
+                                        <div className={'.let-cont-war-titles-contents'}>
+                                            {
+                                                v.list.map(k => (
+                                                    <Link to={`/search/recipe/${k.name}?classifyId=${k.classifyId}`}>
+                                                        <a className={'a-list'}>
+                                                            <div className={'a-list-d1'}>
+                                                                <img className={'a-list-d1-img'} src={k.image}></img>
+                                                            </div>
+                                                            <div className={'a-list-d1-name'}>{k.name}</div>
+                                                        </a>
+                                                    </Link>
+                                                ))
+                                            }
 
+
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
                             </div>
                         </div>
                         // <div style={{ width: '100%' }}>

@@ -1,0 +1,38 @@
+.login-content{    
+	width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+.login-content-img-c{
+	width: 80%;
+	    max-width: 0.400rem;
+	    font-size: 0;
+	    margin: 0 auto;
+}
+.login-content-img{
+	    width: 100%;
+	    overflow: hidden;
+		border: 0;
+}
+.login-content-login{
+	width: 2.95rem;
+	    height: 0.44rem;
+	    box-sizing: border-box;
+	    border-radius: 0.04rem;
+	    margin: 0.30rem auto 0px auto;
+	    display: flex;
+	    justify-content: center;
+	    align-items: center;
+	    background-image: -webkit-linear-gradient(bottom left,#2AC277,#09A458);
+	    background-image: linear-gradient(to top right,#2AC277,#09A458);
+}
+.login-content-login-text{
+	font-size: 0.15rem;
+	    display: inline-block;
+	    vertical-align: middle;
+	    color: #FFFFFF;
+}

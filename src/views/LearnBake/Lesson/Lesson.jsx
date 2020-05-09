@@ -26,7 +26,7 @@ class Lesson extends Component {
             LessonList.buyNum='1000+'
         }
         return (
-            <div>
+            <div style={{overflowY:"auto"}}>
                 {/* top */}
                 <div className={"lesson-video"}>
                     <video controls="controls" autoplay={"autoPlay"} poster={LessonList.image}>
